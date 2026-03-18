@@ -61,7 +61,7 @@ class Calculator:
         for num in nums[1:]:
             if num == 0:
                 return result
-        result /= num
+            result /= num
         return result
 
 print("Level 3")
