@@ -14,19 +14,24 @@ user_sum()
 
 def is_prime(num):
     if num <= 1:
-        print("Not prime")
+        False
         return
-
     for i in range(2, num):
         if num % i == 0:
-            print("Not prime")
+            False
             return
+    return True
 
-    print("Prime")
+def is_prime_range(start, end):
+    for i in range(start, end):
+        if is_prime(i):
+            print(f"Prime {i}")
+        else:
+            print(f"Not prime {i}")
 
 print("Level 2")
-is_prime(7)
-is_prime(10)
+
+is_prime_range(2, 10)
 
 # Level 3
 # 3. Створіть клас "Калькулятор" з методами для додавання, віднімання, множення та ділення. 
